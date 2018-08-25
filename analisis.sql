@@ -57,8 +57,8 @@ CREATE TABLE `orden` (
 
 LOCK TABLES `usuario` WRITE;
 /*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
-INSERT INTO `usuario` VALUES (1,'vector','zavalaa',1,'victor.zavala.14@sansano.usm.cl','pass1234');
-INSERT INTO `usuario` VALUES (2,'giorgio','pellizzari',2,'giorgio.pellizzar.14@sansano.usm.cl','giorgio123');
+INSERT INTO `usuario` VALUES (1,'vector','zavalaa',1,'victor.zavala.14@sansano.usm.cl','v');
+INSERT INTO `usuario` VALUES (2,'giorgio','pellizzari',2,'giorgio.pellizzar.14@sansano.usm.cl','g');
 INSERT INTO `usuario` VALUES (3,'victor','zavala',3,'giorgio.pvectorellizzar.14@sansano.usm.cl','123');
 INSERT INTO `usuario` VALUES (4,'jorge','zavala',4,'gio.pvectorellizzar.14@sansano.usm.cl','pass');
 
