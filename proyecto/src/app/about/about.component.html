@@ -1,0 +1,36 @@
+<div id='cssmenu'>
+<ul>
+   <li><a [routerLink]="['/servicios']">Estado de Orden</a></li>
+   <li><a [routerLink]="['/about']">Solicitar Mantencion</a></li>
+   <li><a [routerLink]="['/login']" type="logout"(click)="logout();" >Logout</a>
+   </li>
+
+</ul>
+</div>
+
+
+<div class="login-page">
+  <h2>Solicitar Mantención</h2>
+    <form (ngSubmit)="onSubmit()" #mantencionForm="ngForm">
+      <div class="form">
+        <label for="title">Titulo</label>
+        <input type="text" class="" id="title"
+               required
+               [(ngModel)]="data.title" name="title"
+               #name="ngModel">
+
+
+
+        <label for="detail">Detalle</label>
+        <input type="detail" class="" id="detail"
+               required
+               [(ngModel)]="data.detail" name="detail"
+               >
+
+
+      <button
+      type="submit" (click) = "onSubmit();">Ingresar Mantencion</button>
+      </div>
+    </form>
+
+</div>

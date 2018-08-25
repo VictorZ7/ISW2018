@@ -1,0 +1,35 @@
+
+<div id='cssmenu'>
+<ul>
+   <li><a [routerLink]="['/administrador']">Estado de Ordenes</a></li>
+   <li><a [routerLink]="['/administrador']">Modificar Orden</a></li>
+     <li><a [routerLink]="['/login']" type="logout"(click)="logout();" >Logout</a>
+     </li>
+
+
+</ul>
+</div>
+
+  <h2>Modificar Orden</h2>
+    <form (ngSubmit)="onSubmit()" #mantencionForm="ngForm">
+      <div class="form">
+        <label for="title">Orden a modificar</label>
+        <input type="text" class="" id="title"
+               required
+               [(ngModel)]="data.title" name="title"
+               #name="ngModel">
+
+
+
+        <label for="detail">Seleccionar estado</label>
+        <select>
+          <option value="pendiente" selected>pendiente</option>
+          <option value="ejecutando">ejecutando</option>
+          <option value="terminada">terminada</option>
+        </select>
+
+
+      <button
+      type="submit" (click) = "onSubmit();">Actualizar Mantencion</button>
+      </div>
+    </form>

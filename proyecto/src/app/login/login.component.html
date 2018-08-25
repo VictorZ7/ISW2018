@@ -1,0 +1,23 @@
+<div class="login-page">
+
+    <h1>Bienvenido</h1>
+    <form (ngSubmit)="onSubmit()" #loginForm="ngForm">
+      <div class="form">
+        <label for="name">Usuario</label>
+        <input type="text" class="" id="name"
+               required
+               [(ngModel)]="data.name" name="name"
+               #name="ngModel">
+
+        <label for="alterEgo">Clave</label>
+        <input type="password" class="" id="pass"
+               required
+               [(ngModel)]="data.pass" name="pass"
+               >
+
+
+      <button
+      type="submit" (click) = "onSubmit();">Iniciar Sesion</button>
+</div>
+    </form>
+    </div>

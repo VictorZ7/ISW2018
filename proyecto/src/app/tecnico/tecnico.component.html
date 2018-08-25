@@ -1,0 +1,75 @@
+  <div id='cssmenu'>
+  <ul>
+     <li><a [routerLink]="['/tecnico']">Optimizar Tiempo</a>
+       <li><a [routerLink]="['/login']" type="logout"(click)="logout();" >Logout</a>
+       </li>
+  </ul>
+  </div>
+
+<div class="container">
+  <h2>Optimizar Tiempo</h2>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Nro De Orden</th>
+        <th>Estado</th>
+        <th>Asunto</th>
+        <th>Fecha</th>
+
+
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr class="success">
+        <td>01</td>
+        <td>Finalizada</td>
+        <td>Presión Válvula</td>
+        <td>2017-06-06</td>
+      </tr>
+
+      <tr class="warning">
+        <td>02</td>
+        <td>En proceso</td>
+        <td>Reemplazo cable RJ45</td>
+        <td>2017-09-08</td>
+      </tr>
+
+      <tr class="danger">
+        <td>03</td>
+        <td>En espera</td>
+        <td>Cambiar filamento ampolleta</td>
+        <td>2017-10-10</td>
+      </tr>
+
+
+
+    </tbody>
+  </table>
+
+  <!--<table class="table">
+
+                      <tr>
+
+                          <th>Titulo</th>
+
+                          <th>Estado</th>
+
+                          <th>Fecha</th>
+
+                      </tr>
+
+                      <tr *ngFor="let dato of datos; let i = index">
+
+                          <td>{{dato.titulo}}</td>
+
+                          <td>{{dato.estado}}</td>
+
+                          <td>{{dato.fecha}}</td>
+
+                      </tr>
+
+                  </table>-->
+
+</div>

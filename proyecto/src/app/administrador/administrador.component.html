@@ -1,0 +1,42 @@
+
+
+<div id='cssmenu'>
+<ul>
+   <li><a [routerLink]="['/administrador']">Estado de Ordenes</a></li>
+   <li><a [routerLink]="['/modificar']">Modificar Orden</a></li>
+     <li><a [routerLink]="['/login']" type="logout"(click)="logout();" >Logout</a>
+     </li>
+
+
+</ul>
+</div>
+<h2>Estado de Ordenes</h2>
+<table class="table">
+
+                    <tr>
+
+                        <th>Titulo</th>
+
+                        <th>Estado</th>
+
+                        <th>Fecha</th>
+
+                    </tr>
+
+                    <tr *ngFor="let dato of datos; let i = index">
+
+                        <td>{{dato.titulo}}</td>
+
+                        <td>{{dato.estado}}</td>
+
+                        <td>{{dato.fecha}}</td>
+
+                    </tr>
+
+                </table>
+
+
+
+
+<div *ngIf="Admin == true; else elseBlock"> Administrador activo</div>
+<ng-template #elseBlock> Admin ausente</ng-template>
