@@ -1,7 +1,7 @@
 <div id='cssmenu'>
 <ul>
    <li><a [routerLink]="['/servicios']">Estado de Orden</a></li>
-   <li><a [routerLink]="['/about']">Solicitar Mantencion</a></li>
+   <li><a [routerLink]="['/about']">Realizar Petición Material</a></li>
    <li><a [routerLink]="['/login']" type="logout"(click)="logout();" >Logout</a>
    </li>
 
@@ -10,7 +10,7 @@
 
 
 <div class="login-page">
-  <h2>Solicitar Mantención</h2>
+  <h2>Realizar Petición Material</h2>
     <form (ngSubmit)="onSubmit()" #mantencionForm="ngForm">
       <div class="form">
         <label for="title">Titulo</label>
@@ -27,9 +27,15 @@
                [(ngModel)]="data.detail" name="detail"
                >
 
+        <label for="detail">Stock</label>
+        <input type="text" class="" id="stock"
+                required
+                      [(ngModel)]="data.stock" name="stock"
+                      >
+
 
       <button
-      type="submit" (click) = "onSubmit();">Ingresar Mantencion</button>
+      type="submit" (click) = "onSubmit();">Ingresar Material</button>
       </div>
     </form>
 

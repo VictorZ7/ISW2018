@@ -1,18 +1,19 @@
   <div id='cssmenu'>
   <ul>
-     <li><a [routerLink]="['/tecnico']">Optimizar Tiempo</a>
+     <li><a [routerLink]="['/Bodeguero']">Stock en Bodega</a>
        <li><a [routerLink]="['/login']" type="logout"(click)="logout();" >Logout</a>
        </li>
   </ul>
   </div>
 
 <div class="container">
-  <h2>Optimizar Tiempo</h2>
+  <h2>Stock en Bodega</h2>
 
   <table class="table">
     <thead>
       <tr>
         <th>Nro De Orden</th>
+        <th>Stock</th>
         <th>Estado</th>
         <th>Asunto</th>
         <th>Fecha</th>
@@ -24,23 +25,26 @@
 
       <tr class="success">
         <td>01</td>
+        <td>14</td>
         <td>Finalizada</td>
         <td>Presión Válvula</td>
-        <td>2017-06-06</td>
+        <td>2018-06-06</td>
       </tr>
 
       <tr class="warning">
         <td>02</td>
+        <td>04</td>
         <td>En proceso</td>
         <td>Reemplazo cable RJ45</td>
-        <td>2017-09-08</td>
+        <td>2018-09-08</td>
       </tr>
 
       <tr class="danger">
         <td>03</td>
+        <td>100</td>
         <td>En espera</td>
         <td>Cambiar filamento ampolleta</td>
-        <td>2017-10-10</td>
+        <td>2018-10-10</td>
       </tr>
 
 

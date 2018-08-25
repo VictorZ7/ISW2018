@@ -6,11 +6,11 @@ import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-tecnico',
-  templateUrl: './tecnico.component.html',
-  styleUrls: ['./tecnico.component.css']
+  selector: 'app-Bodeguero',
+  templateUrl: './Bodeguero.component.html',
+  styleUrls: ['./Bodeguero.component.css']
 })
-export class TecnicoComponent implements OnInit {
+export class BodegueroComponent implements OnInit {
 
   datos : [{
 

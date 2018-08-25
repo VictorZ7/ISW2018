@@ -12,7 +12,7 @@ import { Router } from '@angular/router';
 })
 export class AboutComponent implements OnInit {
 
-  data = {title: "", detail: ""}
+  data = {title: "", detail: "", stock: ""}
 
 
   constructor(private router: Router,private testService : TestService ) {}
@@ -26,7 +26,7 @@ export class AboutComponent implements OnInit {
       this.router.navigate(['administrador']);
     }
     if (localStorage.getItem("currenttype")=="3"){
-      this.router.navigate(['tecnico']);
+      this.router.navigate(['Bodeguero']);
     }
     if (localStorage.getItem("currenttype")=="4"){
       this.router.navigate(['supervisor']);
@@ -44,7 +44,7 @@ export class AboutComponent implements OnInit {
     this.testService.insertMantencion(localStorage.getItem("currentUser"),title,detail)
         .subscribe(result => {
           this.router.navigate(['servicios']);
-          alert("Mantencion Ingresada")
+          alert("Material Ingresado")
         });
 
   }

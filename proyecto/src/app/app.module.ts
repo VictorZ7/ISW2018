@@ -15,7 +15,7 @@ import { AuthenticationService} from './_services/authentication.service';
 import { AuthGuard } from './_guards/auth.guard';
 import { ServiciosComponent } from './servicios/servicios.component';
 import { AdministradorComponent } from './administrador/administrador.component';
-import { TecnicoComponent } from './tecnico/tecnico.component';
+import { BodegueroComponent } from './Bodeguero/Bodeguero.component';
 import { SupervisorComponent } from './supervisor/supervisor.component';
 @NgModule({
   declarations: [
@@ -25,7 +25,7 @@ import { SupervisorComponent } from './supervisor/supervisor.component';
     ServiciosComponent,
     AdministradorComponent,
     ModificarComponent,
-    TecnicoComponent,
+    BodegueroComponent,
     SupervisorComponent
   ],
   imports: [

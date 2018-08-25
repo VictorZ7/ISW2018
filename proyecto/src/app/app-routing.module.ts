@@ -7,7 +7,7 @@ import { ModificarComponent } from './modificar/modificar.component';
 import { LoginComponent } from './login/login.component';
 import { ServiciosComponent } from './servicios/servicios.component';
 import { AdministradorComponent } from './administrador/administrador.component';
-import { TecnicoComponent } from './tecnico/tecnico.component';
+import { BodegueroComponent } from './Bodeguero/Bodeguero.component';
 import { SupervisorComponent } from './supervisor/supervisor.component';
 import { AuthGuard } from './_guards/auth.guard';
 
@@ -18,7 +18,7 @@ const routes: Routes = [
 	{ path: 'servicios', component: ServiciosComponent, canActivate: [AuthGuard] },
 	{ path: 'administrador', component: AdministradorComponent },
 	{ path: 'modificar', component: ModificarComponent },
-	{ path: 'tecnico', component: TecnicoComponent },
+	{ path: 'Bodeguero', component: BodegueroComponent },
 	{ path: 'supervisor', component: SupervisorComponent },
 	{ path: '**', component: AboutComponent }
 ];
