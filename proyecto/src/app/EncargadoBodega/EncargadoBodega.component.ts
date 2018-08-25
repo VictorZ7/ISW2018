@@ -6,11 +6,11 @@ import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-supervisor',
-  templateUrl: './supervisor.component.html',
-  styleUrls: ['./supervisor.component.css']
+  selector: 'app-EncargadoBodega',
+  templateUrl: './EncargadoBodega.component.html',
+  styleUrls: ['./EncargadoBodega.component.css']
 })
-export class SupervisorComponent implements OnInit {
+export class EncargadoBodegaComponent implements OnInit {
 
 
     datos : [{

@@ -36,7 +36,7 @@ export class AdministradorComponent implements OnInit {
       this.router.navigate(['tecnico']);
     }
     if (localStorage.getItem("currenttype")=="4"){
-      this.router.navigate(['supervisor']);
+      this.router.navigate(['EncargadoBodega']);
     }
     if (localStorage.getItem("currenttype")=="0"){
       this.router.navigate(['login']);

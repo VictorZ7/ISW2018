@@ -11,7 +11,7 @@ Instrucciones de ejecución:
 -Con esto podrás ver la pagina en http://localhost:3000 la cual tiene hasta el momento lo siguiente:
 
 - Login con autenticación funcionando
-- 4 usuarios (nombre, clave,tipo):(giorgio,g,administrador),(vector,v,cliente),(victor,123,bodeguero),(jorge,pass,supervisor)
+- 4 usuarios (nombre, clave,tipo):(giorgio,g,administrador),(vector,v,cliente),(victor,123,bodeguero),(jorge,pass,encargado de bodega)
 - Historia de usuario 1: Realizar Petición de Material
 - Historia de usuario 2: Estado de Orden
 - Historia de usuario 3 (solo admin): Modificar Orden, cambia entre pendiente, ejecutando y terminada.

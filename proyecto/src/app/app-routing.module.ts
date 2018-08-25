@@ -8,7 +8,7 @@ import { LoginComponent } from './login/login.component';
 import { ServiciosComponent } from './servicios/servicios.component';
 import { AdministradorComponent } from './administrador/administrador.component';
 import { BodegueroComponent } from './Bodeguero/Bodeguero.component';
-import { SupervisorComponent } from './supervisor/supervisor.component';
+import { EncargadoBodegaComponent } from './EncargadoBodega/EncargadoBodega.component';
 import { AuthGuard } from './_guards/auth.guard';
 
 const routes: Routes = [
@@ -19,7 +19,7 @@ const routes: Routes = [
 	{ path: 'administrador', component: AdministradorComponent },
 	{ path: 'modificar', component: ModificarComponent },
 	{ path: 'Bodeguero', component: BodegueroComponent },
-	{ path: 'supervisor', component: SupervisorComponent },
+	{ path: 'EncargadoBodega', component: EncargadoBodegaComponent },
 	{ path: '**', component: AboutComponent }
 ];
 
