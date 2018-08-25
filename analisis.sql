@@ -65,9 +65,9 @@ INSERT INTO `usuario` VALUES (4,'jorge','zavala',4,'gio.pvectorellizzar.14@sansa
 /*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
 UNLOCK TABLES;
 
-INSERT INTO `orden` VALUES (1,1,'primera orden','esta es la primera orden','pendiente','2017-05-06');
-INSERT INTO `orden` VALUES (2,1,'segunda orden','esta es la segunda orden','pendiente','2017-05-06');
-INSERT INTO `orden` VALUES (3,2,'tercera orden','esta es la tercera orden','ejecutando','2017-05-06');
+INSERT INTO `orden` VALUES (1,1,'primera orden','esta es la primera orden','pendiente','2018-05-06');
+INSERT INTO `orden` VALUES (2,1,'segunda orden','esta es la segunda orden','pendiente','2018-05-06');
+INSERT INTO `orden` VALUES (3,2,'tercera orden','esta es la tercera orden','ejecutando','2018-05-06');
 
 --
 -- Dumping events for database 'test'
